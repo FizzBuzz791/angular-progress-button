@@ -87,6 +87,7 @@ You can also execute a single run in PhantomJS using `grunt test`.
 
 ## Release History
 
+- v0.3.1 (2017-07-07): Fixed injection to support stricter angular (1.6)
 - v0.3.0 (2015-04-21): Allow directive to be used [as an attribute](#as-an-attribute)
 - v0.2.0 (2015-01-20):
     - Remove custom color themes
