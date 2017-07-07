@@ -1,6 +1,6 @@
 # angular-progress-button
 
-[![Build Status](https://travis-ci.org/FizzBuzz791/angular-progress-button.svg?branch=master)](https://travis-ci.org/FizzBuzz791/angular-progress-button)
+[![Build Status][travis-image]][travis-url] [![Bower Version][bower-image]][bower-url] [![Known Vulnerabilities][snyk-image]][synk-url]
 
 Brings [buttons with built-in progress meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)
 to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/angular-progress-button/example).
@@ -115,3 +115,10 @@ The original design and implementation is from Tutorialzine’s “[Buttons With
 ---
 
 `angular-progress-button` was originally written for a [bounty on Bountify](https://bountify.co/turn-this-jquery-into-a-angular-directive). The bounty poster has agreed to put the code under an open-source license.
+
+[travis-image]: https://travis-ci.org/FizzBuzz791/angular-progress-button.svg?branch=master
+[travis-url]: https://travis-ci.org/FizzBuzz791/angular-progress-button
+[bower-image]: https://badge.fury.io/bo/angular-progress-button-enhanced.svg
+[bower-url]: https://badge.fury.io/bo/angular-progress-button-enhanced
+[snyk-image]: https://snyk.io/test/github/fizzbuzz791/angular-progress-button/badge.svg
+[snyk-url]: https://snyk.io/test/github/fizzbuzz791/angular-progress-button
