@@ -1,6 +1,6 @@
 # angular-progress-button
 
-[![Build Status][travis-image]][travis-url] [![Bower Version][bower-image]][bower-url] [![Known Vulnerabilities][snyk-image]][synk-url]
+[![Build Status][travis-image]][travis-url] [![Bower Version][bower-image]][bower-url] [![Known Vulnerabilities][snyk-image]][snyk-url]
 
 Brings [buttons with built-in progress meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)
 to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/angular-progress-button/example).
