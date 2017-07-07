@@ -1,6 +1,6 @@
 # angular-progress-button
 
-[![Build Status](http://img.shields.io/travis/SonicHedgehog/angular-progress-button/develop.svg)](https://travis-ci.org/SonicHedgehog/angular-progress-button)
+[![Build Status](https://travis-ci.org/FizzBuzz791/angular-progress-button.svg?branch=master)](https://travis-ci.org/FizzBuzz791/angular-progress-button)
 
 Brings [buttons with built-in progress meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)
 to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/angular-progress-button/example).
