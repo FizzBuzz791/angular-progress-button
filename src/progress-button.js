@@ -1,5 +1,7 @@
+'use strict';
+
 angular.module('progressButton', [])
-	.directive('progressButton', function($timeout) {
+	.directive('progressButton', ['$timeout', function($timeout) {
 		return {
 			restrict: 'AE',
 			transclude: true,
@@ -76,4 +78,4 @@ angular.module('progressButton', [])
 				}
 			}
 		}
-	});
+	}]);
