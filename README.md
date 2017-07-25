@@ -18,7 +18,7 @@ Download `progress-button.min.js` and `progress-button.min.css` from the `dist` 
 $ bower install angular-progress-button-enhanced
 ```
 
-Or [npm](https:www.npmjs.com):
+Or [npm](https://www.npmjs.com):
 
 ```shell
 $ npm install angular-progress-button
