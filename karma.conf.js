@@ -2,7 +2,7 @@ fs = require('fs')
 
 module.exports = function(config) {
 	config.set({
-		basePath: '',
+		basePath: '.',
 		frameworks: ['jasmine'],
 		files: [
 			'https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js',

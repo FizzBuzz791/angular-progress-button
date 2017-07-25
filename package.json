@@ -1,4 +1,8 @@
 {
+	"name": "angular-progress-button",
+	"version": "0.3.1",
+	"description": "Brings buttons with built-in progress meters to AngularJS.",
+	"main": "src/progress-button.js",
 	"devDependencies": {
 		"grunt": "0.4.x",
 		"grunt-contrib-cssmin": "0.10.x",
@@ -11,5 +15,22 @@
 	},
 	"scripts": {
 		"test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FizzBuzz791/angular-progress-button.git"
+	},
+	"keywords": [
+		"angular",
+		"angularjs",
+		"progress",
+		"progress-button",
+		"button"
+	],
+	"author": "FizzBuzz791 <trentwilliamjones@gmail.com> (https://github.com/FizzBuzz791)",
+	"license": "BSD-2-clause",
+	"bugs": {
+		"url": "https://github.com/FizzBuzz791/angular-progress-button/issues"
+	},
+	"homepage": "https://github.com/FizzBuzz791/angular-progress-button#readme"
 }
