@@ -1,16 +1,19 @@
 describe('progress-button directive', function() {
-	var element, scope, barElement, buttonTextElement
+	var element, scope, barElement, buttonTextElement, $browser, $timeout
 
 	beforeEach(function() {
 		module('progressButton')
-		inject(function($rootScope, $compile) {
-			scope = $rootScope.$new()
+
+		inject(function($rootScope, $compile, _$browser_, _$timeout_ ) {
+			scope = $rootScope.$new();
+			$browser = _$browser_;
+			$timeout = _$timeout_;
 		})
 	})
 
 	function compileDirective(template) {
-		console.log("Compile");
 		element = angular.element(template)
+
 		inject(function($rootScope, $compile) {
 			$compile(element)(scope)
 			$rootScope.$digest()
@@ -18,6 +21,16 @@ describe('progress-button directive', function() {
 			barElement = angular.element(element[0].querySelectorAll('.progress-button-bar'))
 			buttonTextElement = angular.element(element[0].querySelectorAll('.progress-button-text'))
 		})
+		
+		scope.$digest();
+		scope.$apply();
+		
+		$browser.defer.flush(); // return the queued up data
+		$timeout.flush(100);
+        scope.$digest();
+		scope.$apply();
+		
+		
 	}
 
 	it('shows the button’s inner text if progress = 0', function() {
@@ -29,13 +42,12 @@ describe('progress-button directive', function() {
 	})
 
 	it('shows the default in-progress text if progress = 0.5', function() {
-		compileDirective('<progress-button value="progress">Button</progress-button>')
-		scope.$apply()
+		compileDirective('<progress-button value="progress" >Button</progress-button>')
 		
 		scope.progress = 0.5
+		scope.$apply();
+		console.log("Text:" + buttonTextElement.text() );
 		
-		scope.$apply()
-		console.log("Text:" + buttonTextElement.text());
 		expect(buttonTextElement.text()).toBe('Loading…')
 	})
 
