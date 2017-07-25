@@ -3,15 +3,14 @@ describe('progress-button directive', function() {
 
 	beforeEach(function() {
 		module('progressButton')
-
 		inject(function($rootScope, $compile) {
 			scope = $rootScope.$new()
 		})
 	})
 
 	function compileDirective(template) {
+		console.log("Compile");
 		element = angular.element(template)
-
 		inject(function($rootScope, $compile) {
 			$compile(element)(scope)
 			$rootScope.$digest()
@@ -31,10 +30,12 @@ describe('progress-button directive', function() {
 
 	it('shows the default in-progress text if progress = 0.5', function() {
 		compileDirective('<progress-button value="progress">Button</progress-button>')
-
-		scope.progress = 0.5
 		scope.$apply()
-
+		
+		scope.progress = 0.5
+		
+		scope.$apply()
+		console.log("Text:" + buttonTextElement.text());
 		expect(buttonTextElement.text()).toBe('Loading…')
 	})
 

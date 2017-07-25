@@ -13,15 +13,17 @@ angular.module('progressButton', [])
 				completionText: '@complete'
 			},
 			template: '<a class="progress-button"><span class="progress-button-text" ng-transclude></span><span class="progress-button-bar progress-button-{{type}}"></span></a>',
-			link: function(scope, element, attrs) {
-				var bar = angular.element(element[0].querySelectorAll('.progress-button-bar'))
-				var buttonText = angular.element(element[0].querySelectorAll('.progress-button-text'))
-
+            link: function (scope, element, attrs) {
+                var vm = this;                
                 $timeout(function () {
+
+                    var bar = angular.element(element[0].querySelectorAll('.progress-button-bar'))
+                    var buttonText = angular.element(element[0].querySelectorAll('.progress-button-text'))
                     scope.defaultText = buttonText.text();
-                    attrs.$observe('type', function (value) { scope.type = value || 'horizontal' })
-                    attrs.$observe('inProgress', function (value) { scope.inProgressText = value || 'Loading…' })
-                    attrs.$observe('complete', function (value) { scope.completionText = value || 'Complete.' })
+
+                    scope.type = scope.type || 'horizontal';
+                    scope.inProgressText = scope.inProgressText || 'Loading…';
+                    scope.completionText = scope.completionText || 'Complete.';
 
                     scope.$watch('value()', function (value) {
                         if (!value) value = 0
@@ -33,7 +35,6 @@ angular.module('progressButton', [])
                         } else if (value === 1.0) {
                             buttonText.text(scope.completionText)
                             bar.css('display', 'block')
-
                             $timeout(function () {
                                 fadeOut(bar)
                             }, 500)
