@@ -1,21 +1,39 @@
 {
-  "devDependencies": {
-    "grunt": "0.4.x",
-    "grunt-contrib-cssmin": "0.10.x",
-    "grunt-contrib-uglify": "0.5.x",
-    "grunt-karma": "0.8.x",
-    "grunt-ng-annotate": "0.8.x",
-    "karma": "^0.12.37",
-    "karma-jasmine": "0.3.x",
-    "karma-phantomjs-launcher": "0.1.4",
-	"jasmine": "^2.6.0",
-    "jasmine-core": "^2.6.4",	
+	"name": "angular-progress-button",
+	"version": "0.3.1",
+	"description": "Brings buttons with built-in progress meters to AngularJS.",
+	"main": "src/progress-button.js",
+	"devDependencies": {
+		"grunt": "0.4.x",
+		"grunt-contrib-cssmin": "0.10.x",
+		"grunt-contrib-uglify": "0.5.x",
+		"grunt-karma": "0.8.x",
+		"grunt-ng-annotate": "0.8.x",
+		"karma": "^0.12.37",
+		"karma-jasmine": "0.3.x",
+		"karma-phantomjs-launcher": "0.1.4",
+    "jasmine": "^2.6.0",
+    "jasmine-core": "^2.6.4",
     "karma-chrome-launcher": "^2.2.0"
-  },
-  "scripts": {
-    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
-  },
-  "dependencies": {
-    
-  }
+	},
+	"scripts": {
+		"test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FizzBuzz791/angular-progress-button.git"
+	},
+	"keywords": [
+		"angular",
+		"angularjs",
+		"progress",
+		"progress-button",
+		"button"
+	],
+	"author": "FizzBuzz791 <trentwilliamjones@gmail.com> (https://github.com/FizzBuzz791)",
+	"license": "BSD-2-clause",
+	"bugs": {
+		"url": "https://github.com/FizzBuzz791/angular-progress-button/issues"
+	},
+	"homepage": "https://github.com/FizzBuzz791/angular-progress-button#readme"
 }
