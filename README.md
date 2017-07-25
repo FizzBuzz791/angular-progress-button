@@ -1,6 +1,9 @@
 # angular-progress-button
 
-[![Build Status][travis-image]][travis-url] [![Bower Version][bower-image]][bower-url] [![Known Vulnerabilities][snyk-image]][snyk-url]
+[![Build Status](https://travis-ci.org/FizzBuzz791/angular-progress-button.svg?branch=master)](https://travis-ci.org/FizzBuzz791/angular-progress-button)
+[![Bower version](https://badge.fury.io/bo/angular-progress-button-enhanced.svg)](https://badge.fury.io/bo/angular-progress-button-enhanced)
+[![npm version](https://badge.fury.io/js/angular-progress-button.svg)](https://badge.fury.io/js/angular-progress-button)
+[![Known Vulnerabilities](https://snyk.io/test/github/fizzbuzz791/angular-progress-button/badge.svg)](https://snyk.io/test/github/fizzbuzz791/angular-progress-button)
 
 Brings [buttons with built-in progress meters](http://tutorialzine.com/2013/10/buttons-built-in-progress-meters/)
 to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/angular-progress-button/example).
@@ -12,7 +15,13 @@ to AngularJS. [Take a look at the example page](http://sonichedgehog.github.io/a
 Download `progress-button.min.js` and `progress-button.min.css` from the `dist` directory or install using [Bower](http://bower.io):
 
 ```shell
-$ bower install angular-progress-button
+$ bower install angular-progress-button-enhanced
+```
+
+Or [npm](https:www.npmjs.com):
+
+```shell
+$ npm install angular-progress-button
 ```
 
 Then include both files.
@@ -115,10 +124,3 @@ The original design and implementation is from Tutorialzine’s “[Buttons With
 ---
 
 `angular-progress-button` was originally written for a [bounty on Bountify](https://bountify.co/turn-this-jquery-into-a-angular-directive). The bounty poster has agreed to put the code under an open-source license.
-
-[travis-image]: https://travis-ci.org/FizzBuzz791/angular-progress-button.svg?branch=master
-[travis-url]: https://travis-ci.org/FizzBuzz791/angular-progress-button
-[bower-image]: https://badge.fury.io/bo/angular-progress-button-enhanced.svg
-[bower-url]: https://badge.fury.io/bo/angular-progress-button-enhanced
-[snyk-image]: https://snyk.io/test/github/fizzbuzz791/angular-progress-button/badge.svg
-[snyk-url]: https://snyk.io/test/github/fizzbuzz791/angular-progress-button
