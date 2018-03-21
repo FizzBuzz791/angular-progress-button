@@ -1,5 +1,7 @@
 # angular-progress-button
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/FizzBuzz791/angular-progress-button.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/FizzBuzz791/angular-progress-button.svg?branch=master)](https://travis-ci.org/FizzBuzz791/angular-progress-button)
 [![Bower version](https://badge.fury.io/bo/angular-progress-button-enhanced.svg)](https://badge.fury.io/bo/angular-progress-button-enhanced)
 [![npm version](https://badge.fury.io/js/angular-progress-button.svg)](https://badge.fury.io/js/angular-progress-button)
