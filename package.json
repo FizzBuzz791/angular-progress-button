@@ -1,6 +1,6 @@
 {
   "name": "angular-progress-button",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Brings buttons with built-in progress meters to AngularJS.",
   "main": "src/progress-button.js",
   "devDependencies": {
