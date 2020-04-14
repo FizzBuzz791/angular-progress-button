@@ -7,7 +7,7 @@
     "grunt": "~1.0.4",
     "grunt-contrib-cssmin": "~3.0.0",
     "grunt-contrib-uglify": "~4.0.1",
-    "grunt-karma": "^3.0.2",
+    "grunt-karma": "^4.0.0",
     "grunt-ng-annotate": "~3.0.0",
     "jasmine": "^3.5.0",
     "jasmine-core": "^3.5.0",
